@@ -22,7 +22,7 @@ const Country = () => {
       <div className="w-screen h-screen bg-gray-800 flex flex-col justify-top items-center pt-16">
         <h1 className="text-6xl text-white">Welcome to trip advisor</h1>
         <h2 className="text-4xl text-purple-400 my-4">
-          Top Continents for your journey
+          Top Countries for your journey
         </h2>
         <div className="flex flex-row justify-center text-white items-center">
           {countries.map(({ id, name, image }) => {
@@ -32,7 +32,7 @@ const Country = () => {
                 className="w-[25%] h-[300px] mx-4 my-12  relative rounded-2xl hover:scale-105 duration-300 hover:cursor-pointer"
               >
                 <div className="border-2 rounded-xl">
-                  <Link to={`/country/${id}`}>
+                  <Link to={`/country/${name}`}>
                     <img src={image} className="w-100% h-[300px] rounded-xl" />
                   </Link>
                 </div>
